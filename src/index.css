@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'cairo';
+  src: url('/font/Cairo-VariableFont_slnt,wght.ttf');
+}
+
+
+body {
+  font-family: 'cairo', sans-serif;
+  background: url('/image/background.jpg') rgba(0, 0, 0, 0.952);
+  background-blend-mode:  multiply;
+}
+
