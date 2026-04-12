@@ -15,10 +15,13 @@ function Nav() {
                     <li className="text-white hover:text-blue-500 cursor-pointer hidden md:block">من أنا</li>
                     <li className="text-white hover:text-blue-500 cursor-pointer hidden md:block">أعمالي</li>
                     <li className="text-white hover:text-blue-500 cursor-pointer hidden md:block">تواصل</li>
+                    <a href="https://wa.link/p44agc" target="_blank">
                     <li className=" text-white bg-green-500 p-2 px-5 rounded-full cursor-pointer flex items-center gap-2">
                         <span>واتساب</span>
                         <span><FaWhatsapp className="text-lg" /></span>
                     </li>
+                    </a>
+                    
                 </ul>
             </div>
         </nav>

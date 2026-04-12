@@ -109,7 +109,7 @@ function Tec() {
 
     function rendertec(tecs) {
         return tecs.map((item, index) => (
-            <div key={index} className="w-[25%] flex justify-center items-center flex-col gap-2">
+            <div key={index} className="w-full md:w-[23%] flex justify-center items-center flex-col gap-2">
                 <span>{item.icon}</span>
                 <p className="text-lg text-gray-400 text-center">{item.name}</p>
             </div>
