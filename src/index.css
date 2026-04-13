@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 @font-face {
   font-family: 'cairo';
   src: url('/font/Cairo-VariableFont_slnt,wght.ttf');
 }
+
 
 
 body {

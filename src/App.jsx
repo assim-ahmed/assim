@@ -11,10 +11,8 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero />
+      <Hero  />
       <Aboutme />
-      <Exp />
-      <Projects />
       <Contact />
       <Footer />
     

@@ -1,44 +1,30 @@
-import { useState } from "react";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { DiJqueryLogo } from "react-icons/di";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
-import { SiPhp } from "react-icons/si";
-import { FaLaravel } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
-import { DiPostgresql } from "react-icons/di";
-import { FaServer } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
-import { IoIosChatbubbles } from "react-icons/io";
-import { RiTeamFill } from "react-icons/ri";
-import { IoSettings } from "react-icons/io5";
-import { IoIosTimer } from "react-icons/io";
-import { IoSchool } from "react-icons/io5";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import {useState} from "react";
+import {FaHtml5} from "react-icons/fa";
+import {FaCss3Alt} from "react-icons/fa";
+import {FaJs} from "react-icons/fa";
+import {FaReact} from "react-icons/fa";
+import {DiJqueryLogo} from "react-icons/di";
+import {RiTailwindCssFill} from "react-icons/ri";
+import {FaBootstrap} from "react-icons/fa";
+import {SiPhp} from "react-icons/si";
+import {FaLaravel} from "react-icons/fa";
+import {DiMysql} from "react-icons/di";
+import {DiPostgresql} from "react-icons/di";
+import {FaServer} from "react-icons/fa";
+import {FaGitAlt} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
+import {FaCode} from "react-icons/fa";
+import {IoIosChatbubbles} from "react-icons/io";
+import {RiTeamFill} from "react-icons/ri";
+import {IoSettings} from "react-icons/io5";
+import {IoIosTimer} from "react-icons/io";
+import {IoSchool} from "react-icons/io5";
 
 
 
 
 function Tec() {
+
     const [personalTec, setPersonalTec] = useState([
         {name : "Communication" , icon: <IoIosChatbubbles className="text-4xl text-gray-400" />},
         {name : "Teamwork" , icon: <RiTeamFill className="text-4xl text-gray-400" />},
@@ -77,13 +63,15 @@ function Tec() {
          icon: <FaGitAlt className="text-4xl text-gray-400" />
         },
 
+        {name: "Ai Tools",
+         icon: <FaCode className="text-4xl text-gray-400" />
+        },
+
         {name: "GitHub",
          icon: <FaGithub className="text-4xl text-gray-400" />
         },
 
-        {name: "Ai Tools",
-         icon: <FaCode className="text-4xl text-gray-400" />
-        },
+        
         {name: "OOP",
          icon: <FaCode className="text-4xl text-gray-400" />
         },
@@ -109,9 +97,12 @@ function Tec() {
 
     function rendertec(tecs) {
         return tecs.map((item, index) => (
-            <div key={index} className="w-full md:w-[23%] flex justify-center items-center flex-col gap-2">
-                <span>{item.icon}</span>
-                <p className="text-lg text-gray-400 text-center">{item.name}</p>
+            <div key={index} className="">
+                <div className="flex flex-col justify-center items-center p-2 gap-2">
+                    <span>{item.icon}</span>
+                    <span className="text-white">{item.name}</span>
+                </div>
+              
             </div>
         ));
     }
@@ -120,22 +111,25 @@ function Tec() {
     return (
         <div className="tec container mx-auto my-5">
 
-            <h1 className="text-3xl text-center text-white">المهارات التقنية</h1>  
-            <p className="text-lg text-gray-400 text-center">هذه هي المهارات التقنية التي أمتلكها</p>
-            <div className="tec-items flex flex-col gap-10 px-10 justify-center  mt-10  md:flex-row flex-wrap">
+            <div className="flex flex-col items-center gap-3 my-5">
+                <p className="text-blue-300  border rounded-lg p-2">المهارات التقنية</p>
+                <p className="text-lg text-gray-400 text-center">هذه هي المهارات التقنية التي أمتلكها</p>
+            </div>
 
-                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-10 w-full md:w-[45%]">
+            <div className="tec-items flex flex-col gap-10 justify-center md:flex-row flex-wrap">
+                
+                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-8 w-full md:w-[45%]">
 
                     <div className="flex justify-center">
                         <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 w-fit pb-3 to-blue-200 bg-clip-text text-transparent border-b-3  border-blue-100"> الواجهة الامامية </p>
                     </div>
 
-                    <div className="flex justify-center flex-wrap gap-10 mt-10 ">
+                    <div className="flex justify-center flex-wrap gap-10 mt-10">
                        {rendertec(frontendTec)}
                     </div>
-                  
                 </div>
-                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-10 w-full md:w-[45%]">
+
+                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-8 w-full md:w-[45%]">
 
                     <div className="flex justify-center">
                         <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 w-fit pb-3 to-blue-200 bg-clip-text text-transparent border-b-3  border-blue-100"> الواجهة الخلفية </p>
@@ -146,7 +140,8 @@ function Tec() {
                     </div>
                   
                 </div>
-                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-10 w-full md:w-[45%]">
+
+                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-8 w-full md:w-[45%]">
 
                     <div className="flex justify-center">
                         <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 w-fit pb-3 to-blue-200 bg-clip-text text-transparent border-b-3  border-blue-100">  مهارات شخصية </p>
@@ -157,7 +152,8 @@ function Tec() {
                     </div>
                   
                 </div>
-                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-10 w-full md:w-[45%]">
+
+                <div className="item bg-blue-500/30 backdrop-blur-sm rounded-lg p-8 w-full md:w-[45%]">
 
                     <div className="flex justify-center">
                         <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 w-fit pb-3 to-blue-200 bg-clip-text text-transparent border-b-3  border-blue-100">  مهارات أضافية </p>
