@@ -7,7 +7,7 @@ function Nav() {
 
             <div className="container mx-auto flex justify-between">
                 <div className="">
-                    <h1 className="text-2xl font-bold text-blue-500">عاصم احمد</h1>
+                    <h1 className="text-md md:text-2xl font-bold text-blue-500">عاصم احمد</h1>
                 </div>
                 <div className="nav-links">
                     <ul className="flex gap-10 items-center">

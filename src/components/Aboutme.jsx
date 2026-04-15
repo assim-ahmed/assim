@@ -25,7 +25,7 @@ function Aboutme() {
 
                         <Swiper
                             modules={[Autoplay]}
-                            autoplay={{ delay: 2000 }}
+                            autoplay={{delay: 2000}}
                             loop={true}>
 
                             <SwiperSlide>
