@@ -5,7 +5,7 @@ function Hero() {
         <>
         <div 
         id="home"
-        className="flex flex-col items-center gap-10 p-10 container mx-auto" >
+        className="flex flex-col items-center gap-10 p-2 container mx-auto" >
 
             <div className="flex flex-col items-center gap-5 md:flex-row md:justify-between md:gap-15 ">  
 
@@ -33,7 +33,7 @@ function Hero() {
                         </div> 
             </div>
 
-            <div className="animate-bounce">
+            <div className="animate-bounce mb-10">
                 <FcNext className="text-4xl text-blue-500 rotate-90" />
             </div>
 

@@ -20,9 +20,9 @@ function Contact()
                 <p className="text-lg text-gray-400 text-center">يسعدني التواصل معك</p>
             </div>
 
-            <div className="flex flex-col bg-blue-900/50 backdrop-blur-sm  flex flex-col items-center gap-5  md:flex-row ">
+            <div className="flex flex-col bg-[#1B211A] backdrop-blur-sm  flex flex-col items-center gap-5  md:flex-row ">
 
-                  <div className="bg-gray-400/30  p-2 px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
+                  <div className="bg-blue-400/30 rounded-xl py-3 px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
                     <p  className="my-4">
                         <span>البريد الاليكتروني</span> 
                     </p>
@@ -34,7 +34,7 @@ function Contact()
                 </div>
 
                 
-                  <div className="bg-gray-400/30  p-2 px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
+                  <div className="bg-blue-400/30 rounded-xl py-3 px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
                     <p  className="my-4">
                         <span>رقم الهاتف</span> 
                     </p>
@@ -46,7 +46,7 @@ function Contact()
                 </div>
 
 
-                 <div className="bg-gray-400/30  p-2 px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
+                 <div className="bg-blue-400/30 rounded-xl py-3  px-5 w-full md:w-[35%] flex flex-col items-center text-white text-lg">
                     <p className="my-4">
                         <span>التواصل الاجتماعي</span> 
                     </p>
