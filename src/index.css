@@ -16,6 +16,6 @@ html {
 
 body {
   font-family: 'cairo', sans-serif;
-  background:  rgb(17, 17, 24);
+  background:  url("./image/background.jpg");
 }
 
